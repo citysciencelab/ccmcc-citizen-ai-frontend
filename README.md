@@ -40,7 +40,7 @@ Frontend code + UI/UX: [Jakob Wierzba](http://jakobwierzba.de/).
 Project concept:
 [Birk Schmithüsen](https://birkschmithuesen.com),
 [Mikala Hyldig Dal](https://cargocollective.com/mikala-hyldig-dal),
-[Nina Maria Stemberger | ArtesMobiles] (https://artesmobiles.art)
+[Nina Maria Stemberger / ArtesMobiles](https://artesmobiles.art)
 
 System Dynamics: Rico Herzog
 

@@ -1,0 +1,92 @@
+// app global css in Stylus form
+
+
+body.themed
+  // background $bki_blue
+  // background black
+
+  // color black
+  // color white
+  --primary-fill $bki_blue - rgba(0, 0, 0, 0.5)
+  --bki-green-border $bki_green_border
+  --bki-green-bg $bki_green_border - rgba(0, 0, 0, 0.8)
+  --bki-green-fill $bki_green - rgba(0, 0, 0, 0.5)
+  --bki-red-border $bki_red_border
+
+  font-family 'opensans'
+
+  .bg-bki-slider-track
+    background rgba(0, 0, 0, 0.1)
+
+  &.body--dark .bg-bki-slider-track
+    background rgba(255, 255, 255, 0.2)
+
+  .inout
+    .q-card
+      box-shadow none
+      background transparent
+
+    .q-card__section
+      padding 0.5rem 0
+
+  .inout
+    // padding 3em
+
+  .inputs
+  .outputs
+    grid-gap 3em
+
+  .inout
+    // grid-gap 6em
+
+  .bki-info-title
+  .bki-card-title
+    text-transform uppercase
+    font-family 'opensans_cond'
+    font-weight 800
+    span
+      transition background-color 200ms, color 200ms
+
+  .slider-card--active
+    .slider-section-info .q-icon
+      color $bki_blue
+    .bki-card-title span
+      // box-shadow 0 0 0 0.5rem $bki_blue
+      background $bki_blue
+      color black
+
+  .chart-card--active
+    .chart-section-info .q-icon
+      color $bki_red
+    .bki-card-title span
+      // box-shadow 0 0 0 0.5rem $bki_blue
+      background $bki_red
+      color $bki_green
+
+  // .slider--changed .marker-label--origval
+  //   background $bki_blue - rgba(0, 0, 0, 0.8)
+
+  // &.body--dark
+  //   .slider--changed .marker-label--origval
+  //     background $bki_blue - rgba(0, 0, 0, 0.4)
+  //     color black
+
+  .info-title
+    text-transform uppercase
+    font-family 'opensans_cond'
+    font-weight 800
+    font-size 400%
+
+  .q-menu .q-item
+    color black
+
+  for s in (0..50)
+    --bki-blend{s}: blend(rgba($bki_yellow, s/50), $bki_red_border)
+
+  for s in (0..50)
+    --bki-blend{s+50}: blend(rgba($bki_green_border, s/50), $bki_yellow)
+
+  @media (min-width: $breakpoint4k)
+    .q-drawer.q-dark
+    &.body--dark .drawer-content--big
+      background transparent

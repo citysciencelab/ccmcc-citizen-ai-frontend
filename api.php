@@ -1,5 +1,7 @@
 <?php
 
+// this legacy code won't work for the current version
+
 define('verbose', 1);
 
 define('root', dirname(__FILE__));

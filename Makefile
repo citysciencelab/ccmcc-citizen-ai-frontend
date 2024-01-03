@@ -15,6 +15,7 @@ ${lintphpfiles}:
 
 .PHONY: run-php
 run-php: ${lintphpfiles}
+	@echo "!!! this legacy code won't work for the current version !!!"
 	ls *.php | \
 		entr -r php -S 127.0.0.1:8482 api.php
 

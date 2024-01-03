@@ -4,7 +4,17 @@ Dashboard for a gamified resource planning art performance.
 Performed at City Climate meets Creative Coding festival, Hamburg, 2023.
 <https://www.creativecoding.city/citizen-ai>
 
+![Screenshot of the interface](./bki-frontend-screenshot.png)
+
 Built with Vue, [Quasar](https://v1.quasar.dev/) and [Chart.js](https://www.chartjs.org/), it lets you adjust inputs, sends that to [Urban Model Platform](https://github.com/citysciencelab/urban-model-platform) and displays the results in nice charts.
+
+* Meant to be run full screen, kiosk mode
+* Supports a 4k viewport
+* Developed for touch interfaces, so not much hover.
+  Click the "inputs" to reveal a sidebar with more information.
+* The reactive, animated *meshy* background gradient
+  requires a powerful machine to look smooth,
+  especially on 4k.
 
 ## Set up & run
 
